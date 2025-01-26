@@ -1,21 +1,27 @@
 import { useState } from "react";
 
+// Backend URL from environment variable
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 export const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     query: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-  }; 
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+
     try {
-      const response = await fetch("http://localhost:5000/api/contact", {
+      const response = await fetch(`${BACKEND_URL}/api/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -27,11 +33,14 @@ export const ContactForm = () => {
         alert("Query submitted successfully!");
         setFormData({ name: "", email: "", query: "" });
       } else {
-        alert("Failed to submit query.");
+        const errorResponse = await response.json();
+        alert(errorResponse.message || "Failed to submit query.");
       }
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -149,19 +158,20 @@ export const ContactForm = () => {
         </label>
         <button
           type="submit"
+          disabled={loading}
           style={{
             width: "100%",
             padding: "15px",
-            backgroundColor: "#007bff",
+            backgroundColor: loading ? "#6c757d" : "#007bff",
             color: "white",
             fontSize: "1.2rem",
             border: "none",
             borderRadius: "5px",
-            cursor: "pointer",
+            cursor: loading ? "not-allowed" : "pointer",
             transition: "background-color 0.3s",
           }}
         >
-          Submit
+          {loading ? "Submitting..." : "Submit"}
         </button>
       </form>
     </div>
