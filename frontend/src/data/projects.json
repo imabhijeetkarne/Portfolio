@@ -1,0 +1,24 @@
+[
+    {
+      "title": "AirBnb",
+      "imageSrc": "/assets/projects/airbnb.png",
+      "description": "An Airbnb project is a platform that allows users to book accommodations and hosts to list their properties, connecting travelers with unique stays and experiences worldwide.",
+      "skills": ["React", "Express", "Node","Mongodb"],
+      "demo": "https://www.example.com"  
+    },
+    {
+      "title": "Zerodha",
+      "imageSrc": "/assets/projects/Zerodha.png",
+      "description": "A Zerodha project could be summarized as Building a stock trading and investment platform for seamless, low-cost trading and portfolio management.",
+      "skills": ["React", "Express", "Node","Mongodb"],
+      "demo": "https://www.example.com"
+    },
+    {
+      "title": "LinkedIn",
+      "imageSrc": "/assets/projects/LinkedIn.png",
+      "description": "A LinkedIn project is a business and employment-oriented online service that operates via websites and mobile apps. Launched on May 5, 2003, the platform is mainly used for professional networking, and allows job seekers to post their CVs and employers to post jobs.",
+      "skills": ["React", "Express", "Node","Mongodb"],
+      "demo": "https://www.example.com"  
+    }
+  ]
+  
