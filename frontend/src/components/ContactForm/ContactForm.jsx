@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // Backend URL from environment variable
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+// const VITE_BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 export const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +21,7 @@ export const ContactForm = () => {
     setLoading(true);
 
     try {
-      const response = await fetch(`${BACKEND_URL}/api/contact`, {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
