@@ -21,22 +21,31 @@ const Skills = () => {
 
   return (
     <div
+      id="skills"
       name="skills"
-      className="w-full min-h-screen bg-gray-900 text-gray-300 px-6 py-12"
+      className="w-full min-h-screen bg-gray-900 text-gray-300 px-4 sm:px-6 py-12 sm:py-16 lg:py-20"
     >
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto">
         {/* Heading */}
-        <h2 className="text-4xl font-bold text-cyan-400 mb-12">Skills</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold text-cyan-400 text-center mb-8 sm:mb-12 relative inline-block mx-auto">
+          Skills
+          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-cyan-500 rounded-full mt-2"></span>
+        </h2>
 
         {/* Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
           {skills.map(({ id, name, icon }) => (
             <div
               key={id}
-              className="flex flex-col items-center justify-center bg-gray-800 rounded-xl shadow-md shadow-cyan-500/20 py-8 hover:scale-105 hover:shadow-cyan-400/40 transition duration-300"
+              className="flex flex-col items-center justify-center bg-gray-800/70 rounded-xl shadow-lg shadow-cyan-500/10 p-4 sm:p-6 border border-gray-700/50 hover:border-cyan-400/30 hover:scale-[1.03] hover:shadow-cyan-400/30 transition-all duration-300"
             >
-              {icon}
-              <p className="mt-4 text-lg font-medium">{name}</p>
+              <div className="text-4xl sm:text-5xl mb-3 sm:mb-4">
+                {React.cloneElement(icon, {
+                  className: `${icon.props.className} w-8 h-8 sm:w-10 sm:h-10`,
+                  size: undefined
+                })}
+              </div>
+              <p className="text-sm sm:text-base font-medium text-gray-300">{name}</p>
             </div>
           ))}
         </div>

@@ -98,42 +98,42 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-900 text-gray-300">
+    <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-gray-900 text-gray-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-        <h2 className="text-4xl font-bold text-cyan-400 text-center mb-12 relative pb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-cyan-400 text-center mb-8 sm:mb-12 relative pb-4">
           Get In Touch
           <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-500 rounded-full"></span>
         </h2>
 
-        <div className="flex flex-col lg:flex-row gap-8 mt-12">
+        <div className="flex flex-col lg:flex-row gap-6 md:gap-8 mt-8 sm:mt-12">
           {/* Contact Info */}
-          <div className="w-full lg:w-1/3 bg-white p-8 rounded-lg shadow-sm">
-            <div className="flex items-start mb-6 pb-6 border-b border-gray-100 last:border-0 last:mb-0 last:pb-0">
-              <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-500 text-xl mr-4 flex-shrink-0">
+          <div className="w-full lg:w-1/3 bg-white p-6 sm:p-8 rounded-lg shadow-sm">
+            <div className="flex items-start mb-5 pb-5 sm:mb-6 sm:pb-6 border-b border-gray-100 last:border-0 last:mb-0 last:pb-0">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-500 text-lg sm:text-xl mr-3 sm:mr-4 flex-shrink-0">
                 <FaMapMarkerAlt />
               </div>
-              <div>
-                <h3 className="text-lg font-semibold text-gray-800">Pune , India</h3>
+              <div className="flex-1">
+                <h3 className="text-base sm:text-lg font-semibold text-gray-800">Pune, India</h3>
               </div>
             </div>
 
-            <div className="flex items-start mb-6 pb-6 border-b border-gray-100 last:border-0 last:mb-0 last:pb-0">
-              <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-500 text-xl mr-4 flex-shrink-0">
+            <div className="flex items-start mb-5 pb-5 sm:mb-6 sm:pb-6 border-b border-gray-100 last:border-0 last:mb-0 last:pb-0">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-500 text-lg sm:text-xl mr-3 sm:mr-4 flex-shrink-0">
                 <FaEnvelope />
               </div>
-              <div>
-                <h3 className="text-lg font-semibold text-gray-800">Email</h3>
-                <p className="text-gray-600">abhijeetkarne47@gmail.com</p>
+              <div className="flex-1">
+                <h3 className="text-base sm:text-lg font-semibold text-gray-800">Email</h3>
+                <p className="text-sm sm:text-base text-gray-600 break-words">abhijeetkarne47@gmail.com</p>
               </div>
             </div>
 
             <div className="flex items-start">
-              <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-500 text-xl mr-4 flex-shrink-0">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-500 text-lg sm:text-xl mr-3 sm:mr-4 flex-shrink-0">
                 <FaPhone />
               </div>
-              <div>
-                <h3 className="text-lg font-semibold text-gray-800">Phone</h3>
-                <p className="text-gray-600">+91 9156139538</p>
+              <div className="flex-1">
+                <h3 className="text-base sm:text-lg font-semibold text-gray-800">Phone</h3>
+                <p className="text-sm sm:text-base text-gray-600">+91 9156139538</p>
               </div>
             </div>
           </div>
@@ -142,7 +142,7 @@ const Contact = () => {
           <form
             ref={form}
             onSubmit={handleSubmit}
-            className="w-full lg:w-2/3 bg-white p-8 rounded-lg shadow-sm"
+            className="w-full lg:w-2/3 bg-white p-6 sm:p-8 rounded-lg shadow-sm"
           >
             {submitStatus.message && (
               <div
@@ -162,8 +162,7 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="Your Name"
-                className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 transition font-semibold text-black ${errors.name ? 'border-red-500' : 'border-gray-300'
-                  }`}
+                className={`w-full px-4 py-2 sm:py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 transition font-medium sm:font-semibold text-black text-sm sm:text-base ${errors.name ? 'border-red-500' : 'border-gray-300'}`}
               />
               {errors.name && (
                 <span className="text-red-500 text-sm mt-1 block">
@@ -179,8 +178,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Your Email"
-                className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 transition font-semibold text-black ${errors.email ? 'border-red-500' : 'border-gray-300'
-                  }`}
+                className={`w-full px-4 py-2 sm:py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 transition font-medium sm:font-semibold text-black text-sm sm:text-base ${errors.email ? 'border-red-500' : 'border-gray-300'}`}
               />
               {errors.email && (
                 <span className="text-red-500 text-sm mt-1 block">
@@ -196,8 +194,7 @@ const Contact = () => {
                 value={formData.subject}
                 onChange={handleChange}
                 placeholder="Subject"
-                className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 transition font-semibold text-black ${errors.subject ? 'border-red-500' : 'border-gray-300'
-                  }`}
+                className={`w-full px-4 py-2 sm:py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 transition font-medium sm:font-semibold text-black text-sm sm:text-base ${errors.subject ? 'border-red-500' : 'border-gray-300'}`}
               />
               {errors.subject && (
                 <span className="text-red-500 text-sm mt-1 block">
@@ -213,8 +210,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="Your Message"
                 rows="5"
-                className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 transition font-semibold text-black ${errors.message ? 'border-red-500' : 'border-gray-300'
-                  }`}
+                className={`w-full px-4 py-2 sm:py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 transition font-medium sm:font-semibold text-black text-sm sm:text-base ${errors.message ? 'border-red-500' : 'border-gray-300'}`}
               ></textarea>
               {errors.message && (
                 <span className="text-red-500 text-sm mt-1 block">
@@ -226,7 +222,7 @@ const Contact = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full sm:w-auto bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-lg flex items-center justify-center gap-2 transition duration-300 transform hover:-translate-y-0.5 hover:shadow-md disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none disabled:shadow-none"
+              className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 sm:py-3 px-6 sm:px-8 rounded-lg flex items-center justify-center gap-2 transition duration-300 transform hover:-translate-y-0.5 hover:shadow-md disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none disabled:shadow-none text-sm sm:text-base"
             >
               {isSubmitting ? 'Sending...' : (
                 <>
