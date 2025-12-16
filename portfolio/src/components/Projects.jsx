@@ -1,7 +1,7 @@
 import React from "react";
-import project1 from "../assets/img/Project1.png"; 
+import project1 from "../assets/img/Project1.png";
 import project2 from "../assets/img/Project2.png";
-import project3 from "../assets/img/Project3.png";  
+import project3 from "../assets/img/Project3.png";
 
 const Projects = () => {
   const projects = [
@@ -41,9 +41,8 @@ const Projects = () => {
     >
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl font-bold text-cyan-400 text-center mb-8 sm:mb-12 relative inline-block mx-auto">
+        <h2 className="text-3xl sm:text-4xl font-bold text-cyan-400 text-center mb-8 sm:mb-12 mx-auto">
           Projects
-          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-cyan-500 rounded-full mt-2"></span>
         </h2>
 
         {/* Grid */}

@@ -9,8 +9,8 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 
 const App = () => {
-  return ( 
-    <div>
+  return (
+    <>
       <Home/>
       <Navbar />
       <About />
@@ -19,8 +19,8 @@ const App = () => {
       <Skills />
       <Contact />
       <Footer />
-    </div>
-   );
-}
+    </>
+  );
+};
 
-export default App
+export default App;

@@ -100,9 +100,8 @@ const Contact = () => {
   return (
     <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-gray-900 text-gray-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-        <h2 className="text-3xl sm:text-4xl font-bold text-cyan-400 text-center mb-8 sm:mb-12 relative pb-4">
-          Get In Touch
-          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-500 rounded-full"></span>
+        <h2 className="text-3xl sm:text-4xl font-bold text-cyan-400 text-center mb-8 sm:mb-12 mx-auto">
+          Get in Touch
         </h2>
 
         <div className="flex flex-col lg:flex-row gap-6 md:gap-8 mt-8 sm:mt-12">

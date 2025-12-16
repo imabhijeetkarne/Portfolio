@@ -1,5 +1,6 @@
 import React from "react";
-import profilePic from "../assets/img/Abhijeet Formal Photo.jpg"; // replace with your image in assets folder
+import { motion } from "framer-motion";
+import profilePic from "../assets/img/Abhijeet Formal Photo.jpg";
 
 const About = () => {
     return (
@@ -13,11 +14,39 @@ const About = () => {
 
                 {/* Left Side - Image */}
                 <div className="flex justify-center">
-                    <img
-                        src={profilePic}
-                        alt="Profile"
-                        className="rounded-2xl w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 object-cover border-4 border-cyan-400 shadow-lg shadow-cyan-500/30"
-                    />
+                    <motion.div
+                        className="relative rounded-2xl overflow-hidden"
+                        initial={{ scale: 1 }}
+                        whileHover={{
+                            scale: [1, 1.05, 1.1],
+                            rotate: [0, 2, -2, 0],
+                            transition: {
+                                duration: 0.6,
+                                ease: "easeInOut",
+                                times: [0, 0.4, 1],
+                            },
+                        }}
+                    >
+                        <motion.img
+                            src={profilePic}
+                            alt="Profile"
+                            className="w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 object-cover border-4 border-cyan-400 shadow-lg shadow-cyan-500/30"
+                            whileHover={{
+                                scale: 1.1,
+                                transition: {
+                                    duration: 0.6,
+                                    ease: "easeInOut"
+                                }
+                            }}
+                        />
+                        <motion.div 
+                            className="absolute inset-0 bg-gradient-to-t to-transparent opacity-0"
+                            whileHover={{
+                                opacity: 1,
+                                transition: { duration: 0.4 }
+                            }}
+                        />
+                    </motion.div>
                 </div>
 
                 {/* Right Side - Text */}
@@ -63,3 +92,6 @@ const About = () => {
 };
 
 export default About;
+
+
+

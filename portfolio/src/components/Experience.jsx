@@ -20,9 +20,8 @@ const Experience = () => {
   return (
     <div id="experience" className="w-full min-h-screen bg-gray-900 text-gray-300 px-4 sm:px-6 py-10 sm:py-12 lg:py-16">
       <div className="max-w-4xl mx-auto px-2 sm:px-4">
-        <h2 className="text-3xl sm:text-4xl font-bold text-cyan-400 text-center mb-6 sm:mb-8 relative inline-block mx-auto">
+        <h2 className="text-3xl sm:text-4xl font-bold text-cyan-400 text-center mb-8 sm:mb-12 mx-auto">
           Experience
-          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-cyan-500 rounded-full mt-2"></span>
         </h2>
 
         {experiences.map(({ id, role, company, duration, desc }) => (

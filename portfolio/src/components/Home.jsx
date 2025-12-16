@@ -30,7 +30,7 @@ const Home = () => {
     const phoneUrl = `tel:${phoneNumber}`;
 
     return (
-        <div id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 to-gray-800 text-white px-4 sm:px-6 py-12 sm:py-16">
+        <div id="home" className="min-h-screen flex items-center justify-center bg-gray-900 text-white px-4 sm:px-6 py-12 sm:py-16">
             <motion.div
                 className="text-center w-full max-w-4xl px-4 sm:px-6"
                 variants={containerVariants}
@@ -43,7 +43,7 @@ const Home = () => {
                     transition={{ delay: 0.2 }}
                 >
                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4">
-                        Hi, I'm <span className="text-blue-400">Abhijeet Karne</span>
+                        Hi, I'm <span className="text-cyan-400">Abhijeet Karne</span>
                     </h1>
 
                     <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-6 h-10 sm:h-12 md:h-14 flex items-center justify-center">
