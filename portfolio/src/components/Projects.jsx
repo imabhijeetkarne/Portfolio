@@ -20,7 +20,7 @@ const Projects = () => {
       img: project2,
       desc: "A web platform for managing courses, learning content, and user progress..",
       github: "https://github.com/imabhijeetkarne/LMS",
-      demo: "https://airbnb-001p.onrender.com/",
+      demo: "https://virtualcourse-tf1z.onrender.com/",
     },
 
     {
