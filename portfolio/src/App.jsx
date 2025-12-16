@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Home from './components/Home';
+import BackToTop from './components/BackToTop';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Skills />
       <Contact />
       <Footer />
+      <BackToTop />
     </>
   );
 };
