@@ -68,7 +68,7 @@ const About = () => {
                     <div className="mt-6 flex flex-col sm:flex-row gap-4">
                         {/* View Resume Button */}
                         <a
-                            href="/ABHIJEET_KARNE_CV.pdf" // PDF inside public folder
+                            href="\ABHIJEET_KARNE_RESUME.pdf" // PDF inside public folder
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-6 py-3 bg-gray-300 text-gray-900 font-semibold rounded-lg shadow-md hover:bg-gray-400 hover:scale-105 transition duration-300 text-center"
@@ -78,8 +78,8 @@ const About = () => {
 
                         {/* Download Resume Button */}
                         <a
-                            href="/ABHIJEET_KARNE_CV.pdf"
-                            download="ABHIJEET_KARNE_CV.pdf"
+                            href="\ABHIJEET_KARNE_RESUME.pdf"
+                            download="\ABHIJEET_KARNE_RESUME.pdf"
                             className="px-6 py-3 bg-cyan-400 text-gray-900 font-semibold rounded-lg shadow-md hover:bg-cyan-500 hover:scale-105 transition duration-300 text-center"
                         >
                             Download Resume
