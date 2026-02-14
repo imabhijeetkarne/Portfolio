@@ -1,20 +1,31 @@
 import React from "react";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaJava } from "react-icons/fa";
-import { SiMongodb, SiTailwindcss, SiGit, SiGithub } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaJava, FaPython, FaDocker, FaGitAlt, FaDatabase } from "react-icons/fa";
+import { SiMongodb, SiTailwindcss, SiGit, SiGithub, SiRedux, SiBootstrap, SiPostman, SiMysql, SiSocketdotio, SiRender, SiVercel } from "react-icons/si";
 
 const Skills = () => {
   const skills = [
-    { id: 1, name: "HTML", icon: <FaHtml5 size={40} className="text-orange-500" /> },
-    { id: 2, name: "CSS", icon: <FaCss3Alt size={40} className="text-blue-500" /> },
     { id: 3, name: "JavaScript", icon: <FaJs size={40} className="text-yellow-400" /> },
     { id: 4, name: "Java", icon: <FaJava size={40} className="text-red-600" /> },
-    { id: 5, name: "MongoDB", icon: <SiMongodb size={40} className="text-green-400" /> },
-    { id: 6, name: "Express.js", icon: <FaNodeJs size={40} className="text-white" /> },
-    { id: 7, name: "React", icon: <FaReact size={40} className="text-cyan-400" /> },
-    { id: 8, name: "Node.js", icon: <FaNodeJs size={40} className="text-green-500" /> },
-    { id: 9, name: "Tailwind", icon: <SiTailwindcss size={40} className="text-cyan-500" /> },
-    { id: 10, name: "Git", icon: <SiGit size={40} className="text-red-500" /> },
-    { id: 11, name: "GitHub", icon: <SiGithub size={40} className="text-gray-300" /> },
+    { id: 5, name: "Python", icon: <FaPython size={40} className="text-blue-400" /> },
+    { id: 6, name: "SQL", icon: <FaDatabase size={40} className="text-blue-600" /> },
+    { id: 12, name: "React", icon: <FaReact size={40} className="text-cyan-400" /> },
+    { id: 7, name: "Redux", icon: <SiRedux size={40} className="text-purple-500" /> },
+    { id: 1, name: "HTML", icon: <FaHtml5 size={40} className="text-orange-500" /> },
+    { id: 2, name: "CSS", icon: <FaCss3Alt size={40} className="text-blue-500" /> },
+    { id: 8, name: "Bootstrap", icon: <SiBootstrap size={40} className="text-purple-600" /> },
+    { id: 14, name: "Tailwind", icon: <SiTailwindcss size={40} className="text-cyan-500" /> },
+    { id: 13, name: "Node.js", icon: <FaNodeJs size={40} className="text-green-500" /> },
+    { id: 11, name: "Express.js", icon: <FaNodeJs size={40} className="text-white" /> },
+    { id: 17, name: "MySQL", icon: <SiMysql size={40} className="text-blue-500" /> },
+    { id: 10, name: "MongoDB", icon: <SiMongodb size={40} className="text-green-400" /> },
+    { id: 18, name: "Socket.io", icon: <SiSocketdotio size={40} className="text-green-600" /> },
+    { id: 15, name: "Git", icon: <SiGit size={40} className="text-red-500" /> },
+    { id: 16, name: "GitHub", icon: <SiGithub size={40} className="text-gray-300" /> },
+    { id: 9, name: "Postman", icon: <SiPostman size={40} className="text-orange-600" /> },
+    { id: 20, name: "Render", icon: <SiRender size={40} className="text-cyan-500" /> },
+    { id: 21, name: "Vercel", icon: <SiVercel size={40} className="text-white" /> },
+    { id: 19, name: "Docker", icon: <FaDocker size={40} className="text-blue-400" /> }
+
 
   ];
 

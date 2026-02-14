@@ -8,11 +8,10 @@ const Experience = () => {
       company: "Numetry Technologies",
       duration: "Jan 2025 - July 2025",
       desc: [
-        "Built and deployed full-stack web applications using the MERN stack.",
-        "Implemented authentication and authorization using JWT.",
-        "Designed and developed RESTful APIs with Express.js.",
-        "Managed MongoDB databases with CRUD operations.",
-        "Worked on responsive UI design using React and Tailwind CSS.",
+        "Engineered a MERN-based healthcare booking platform supporting 100+ concurrent users, improving appointmentaccessibility and reliability",
+        "Reduced patient booking time by 30% using real-time scheduling and optimized form workflows.",
+        "Implemented secure role-based access control (RBAC) for Admin,Doctor & Patient roles ensuring secure authorization & data isolation.",
+        "Optimized backend APIs to improve performance by 40% and reduce frontend load times by 35%.",
       ],
     },
   ];
